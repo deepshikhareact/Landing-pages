@@ -32,15 +32,24 @@ const About = () => {
       </div>
       <div className="section-4">
         <div className="text-center-wrapper">
-        <h2 className="text-72 text-600">
-        Value Proposition Statement
-        </h2>
-        <p className="text-28">
-        Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text.
-        </p>
+          <h2 className="text-72 text-600">Value Proposition Statement</h2>
+          <p className="text-28">
+            Description text paragraph can go here in 200 words. This can be
+            multi-line text. Description text paragraph can go here in 200
+            words. This can be multi-line text. Description text paragraph can
+            go here in 200 words. This can be multi-line text. Description text
+            paragraph can go here in 200 words. This can be multi-line text.
+          </p>
         </div>
       </div>
       <div id="section5" className="Big-container">
+        <img
+          className="main-backImage"
+          src="/assets/blue-particle.jpg"
+          alt="bg-image"
+          height="700"
+          width="500"
+        />
         <div className="left parent">
           <img
             className="backImage"
@@ -54,16 +63,16 @@ const About = () => {
         <div className="right">
           <div className="card">
             <div className="text-wrapper">
-            <p className="text-32 text-400">
-              Small descriptive text in 3-4 lines can go here. They can be a
-              single line or short paragraph too. Small descriptive text in 3-4
-              lines can go here. They can be a single line or short paragraph
-              too. Small descriptive text in 3-4 lines can go here. They can be
-              a single line or short paragraph too. Small descriptive text in
-              3-4 lines can go here. They can be a single line or short
-              paragraph too.
-            </p>
-            <button className="button">Know More</button>
+              <p className="text-32 text-400">
+                Small descriptive text in 3-4 lines can go here. They can be a
+                single line or short paragraph too. Small descriptive text in
+                3-4 lines can go here. They can be a single line or short
+                paragraph too. Small descriptive text in 3-4 lines can go here.
+                They can be a single line or short paragraph too. Small
+                descriptive text in 3-4 lines can go here. They can be a single
+                line or short paragraph too.
+              </p>
+              <button className="button">Know More</button>
             </div>
           </div>
         </div>
