@@ -88,6 +88,9 @@ body {
   font-family: "Poppins", sans-serif;
   --header-h: 60px;
   --main-p-x: 1rem;
+  --main-p-y: 1rem;
+  --col-gap: 1em;
+
   > div > div {
     padding: 0 var(--main-p-x);
   }
