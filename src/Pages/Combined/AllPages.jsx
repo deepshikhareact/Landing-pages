@@ -8,7 +8,6 @@ const AllPages = () => {
 <Home/>
 <About/>
 <BehindUs/>
-
 </>
   )
 }

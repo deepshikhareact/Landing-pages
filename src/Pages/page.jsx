@@ -313,35 +313,35 @@ const CardsPage = () => {
       <div id="section9" className="image-gallery">
         <img
           loading="lazy"
-          src="/img/rectangle26.png"
+          src="/assets/Banner.png"
           alt="bg-image"
           height="400"
           width="300"
         />
         <img
           loading="lazy"
-          src="/img/rectangle29.png"
+          src="/assets/Banner.png"
           alt="bg-image"
           height="400"
           width="300"
         />
         <img
           loading="lazy"
-          src="/img/rectangle30.png"
+          src="/assets/Banner.png"
           alt="bg-image"
           height="400"
           width="300"
         />
         <img
           loading="lazy"
-          src="/img/rectangle27.png"
+          src="/assets/Banner.png"
           alt="bg-image"
           height="400"
           width="300"
         />
         <img
           loading="lazy"
-          src="/img/rectangle28.png"
+          src="/assets/Banner.png"
           alt="bg-image"
           height="400"
           width="300"
