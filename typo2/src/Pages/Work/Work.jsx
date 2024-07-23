@@ -1,3 +1,4 @@
+import CoverPageImage from "@/Components/CoverPage";
 import "./style.scss";
 
 const WorkPage = () => {
@@ -113,9 +114,6 @@ Vaishnavi Estate Coffee`}
   );
 };
 
-function CoverPageImage({ src }) {
-  return <img style={{ objectFit: "cover" }} height={250} width={"100%"} src={src} alt={src} />
-}
 
 
 export default WorkPage;

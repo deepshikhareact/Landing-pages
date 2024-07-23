@@ -17,14 +17,24 @@
     z-index: 17;
 
     .top {
-        h1 {
-            font-size: var(--text-60);
-        }
+
 
         height: var(--header-h);
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: .5em;
+
+            img {
+                border-radius: 50%;
+                background-color: #fff;
+                object-fit: cover;
+            }
+        }
 
         .menu-toggle {
             border-radius: 50%;
@@ -45,7 +55,7 @@
             &::after {
                 transition: all .2s ease-in;
                 transform-origin: center center;
-                transform-box: content-box;
+                // transform-box: content-box;
                 position: absolute;
                 content: "";
                 height: 3px;
@@ -77,6 +87,7 @@
                 }
             }
         }
+
 
         @keyframes rotateRight {
             100% {
@@ -110,6 +121,7 @@
         gap: 1rem;
         z-index: 18;
         transform-origin: right top;
+        border-radius: 0px 0px 10px 10px;
 
         .item-section {
             display: flex;

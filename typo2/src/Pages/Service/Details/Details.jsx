@@ -1,3 +1,4 @@
+import CoverPageImage from "@/Components/CoverPage";
 import "./style.scss";
 
 const fakeCardData = [
@@ -107,10 +108,12 @@ const DetailsPage = () => {
               <summary className="text-32 text-500">
                 What is the difference between a website and a web application?
               </summary>
-              <p className="text-28 text-300">
-                A website is a collection of web pages that are connected to
-                each other and are accessible
-              </p>
+              <div className="content">
+                <div className="text-28 text-300">
+                  A website is a collection of web pages that are connected to
+                  each other and are accessible
+                </div>
+              </div>
             </details>
           );
         })}
@@ -126,9 +129,6 @@ function KnowMoreBtn({ btnClass = "", link, lable = "KNOW MORE" }) {
     </button>
   );
 };
-function CoverPageImage({ src }) {
-  return <img style={{ objectFit: "cover" }} height={250} width={"100%"} src={src} alt={src} />
-}
 
 
 export default DetailsPage;

@@ -11,7 +11,11 @@ const Header = () => {
   return (
     <div className="header1">
       <div className="top">
-        <h1 className="logo">Logo</h1>
+        <h1 className="logo">
+          <img src="/assets/Banner.png" height={40} width={40} alt="Logo" />
+          <h3 className="text-16 text-700">CX Agent</h3>
+
+        </h1>
         <button
           className={isMenuOpen ? "menu-toggle active " : "menu-toggle"}
           onClick={toggleMenu}

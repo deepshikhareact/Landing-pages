@@ -1,5 +1,6 @@
 import TestimonialsSlider from "@/Components/Testomonials/Slider";
 import "./style.scss";
+import CoverPageImage from "@/Components/CoverPage";
 
 const fakeDes =
   "Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text. Description text paragraph can go here in 200 words. This can be multi-line text.";
@@ -100,9 +101,6 @@ function ServiceProductCard({ data }) {
 }
 
 
-function CoverPageImage({ src }) {
-  return <img style={{ objectFit: "cover" }} height={250} width={"100%"} src={src} alt={src} />
-}
 
 
 function KnowMoreBtn({ btnClass = "", link, lable = "KNOW MORE" }) {

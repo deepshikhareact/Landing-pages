@@ -1,5 +1,6 @@
 import ImageSlider from "@/Components/Image-Slider/Slider";
 import "./style.scss";
+import CoverPageImage from "@/Components/CoverPage";
 
 const headingText = `Thinkers, artists, analysts, 
 strategists, coders, producers, rebels, 
@@ -87,8 +88,5 @@ const About = () => {
   );
 };
 
-function CoverPageImage({ src }) {
-  return <img style={{ objectFit: "cover" }} height={250} width={"100%"} src={src} alt={src} />
-}
 
 export default About;

@@ -11,6 +11,7 @@ const AllPages = lazy(() => import("./Pages/Combined/AllPages"));
 const ServicePage = lazy(() => import("./Pages/Service/Service"));
 const DetailsPage = lazy(() => import("./Pages/Service/Details/Details"));
 const WorkPage = lazy(() => import("./Pages/Work/Work"));
+const ContactPage = lazy(() => import("./Pages/Contact/page"));
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/behindUs" element={<BehindUs />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/services/details" element={<DetailsPage />} />
           <Route path="*" element={<Home />} />

@@ -7,68 +7,52 @@ export const menuItems = [
   {
     title: "About Us",
     url: "/about",
-    links: [
-      {
-        label: "Company",
-        href: "#",
-      },
-      {
-        label: "People",
-        href: "#",
-      },
-      {
-        label: "Work With Us",
-        href: "#",
-      },
-    ],
+    // links: [
+    //   {
+    //     label: "Company",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "People",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "Work With Us",
+    //     href: "#",
+    //   },
+    // ],
   },
   {
     title: "Our Services",
     url: "/services",
     links: [
       {
-        label: "Consulting",
-        href: "#",
-      },
-      {
-        label: "Design",
-        href: "#",
-      },
-      {
-        label: "Digital & Tech",
-        href: "#",
-      },
-      {
-        label: "Marketing",
-        href: "#",
-      },
-      {
-        label: "CX",
-        href: "#",
+        label: "Details",
+        href: "/services/details",
       },
     ],
   },
   {
     title: "Our Work",
     url: "/work",
-    links: [
-      {
-        label: "Design",
-        href: "#",
-      },
-      {
-        label: "Digital & Tech",
-        href: "#",
-      },
-      {
-        label: "Production",
-        href: "#",
-      },
-      {
-        label: "Case Studies",
-        href: "#",
-      },
-    ],
+    // links: [
+    //   {
+    //     label: "Design",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "Digital & Tech",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "Production",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "Case Studies",
+    //     href: "#",
+    //   },
+    // ],
   },
   {
     title: "Resource",
@@ -76,8 +60,13 @@ export const menuItems = [
     links: [],
   },
   {
-    title: "Contact Us",
+    title: "Our Team",
     url: "/behindUs",
+    links: [],
+  },
+  {
+    title: "Contact Us",
+    url: "/contact",
     links: [],
   },
 ];

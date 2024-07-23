@@ -153,10 +153,59 @@
     details {
       cursor: pointer;
 
-      p {
-        padding-left: calc(var(--main-p-x) + .2em);
+      .content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows .5s ease-in-out;
+
+        >div {
+          overflow: hidden;
+        }
       }
+
+      summary {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          right: 1rem;
+          top: 10px;
+          height: 2px;
+          width: 15px;
+          background-color: #000;
+        }
+
+        &::after {
+          rotate: 90deg;
+          transition: rotate .2s ease-out;
+        }
+      }
+
+      summary::marker {
+        display: none;
+        font-size: 0px;
+      }
+
+      &[open] {
+        summary::after {
+          rotate: 180deg;
+        }
+
+        .content {
+          animation: scaleUp .5s .2s both;
+        }
+
+      }
+
     }
+  }
+}
+
+@keyframes scaleUp {
+  100% {
+    grid-template-rows: 1fr;
   }
 }
 
