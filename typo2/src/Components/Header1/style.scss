@@ -27,7 +27,11 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: .5em;
+            gap: 1em;
+
+            h3 {
+                font-size: var(--text-32);
+            }
 
             img {
                 border-radius: 50%;
@@ -130,8 +134,10 @@
             align-items: flex-start;
             color: #ffffff;
 
-            h3 {
+            .h3 {
                 font-size: var(--text-42);
+                color: #ffffff;
+                text-decoration: none;
                 // font-size: 1.5vmax;
                 transition: color .1s ease-in-out, text-decoration .1s ease-in-out;
                 cursor: pointer;

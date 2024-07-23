@@ -12,11 +12,10 @@ const ServicePage = lazy(() => import("./Pages/Service/Service"));
 const DetailsPage = lazy(() => import("./Pages/Service/Details/Details"));
 const WorkPage = lazy(() => import("./Pages/Work/Work"));
 const ContactPage = lazy(() => import("./Pages/Contact/page"));
-
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div >Loading...</div>}>
+      <Suspense fallback={<div className="loading" ></div>}>
         <Header1 />
         <Routes>
           <Route path="/" element={<AllPages />} />

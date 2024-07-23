@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.scss";
 import { menuItems } from "./const";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -8,14 +9,21 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    return () => setIsMenuOpen(false)
+  }, [location]);
+
+
   return (
     <div className="header1">
       <div className="top">
-        <h1 className="logo">
+        <div className="logo">
           <img src="/assets/Banner.png" height={40} width={40} alt="Logo" />
           <h3 className="text-16 text-700">CX Agent</h3>
 
-        </h1>
+        </div>
         <button
           className={isMenuOpen ? "menu-toggle active " : "menu-toggle"}
           onClick={toggleMenu}
@@ -25,13 +33,13 @@ const Header = () => {
       <div className={isMenuOpen ? "menu active " : "menu"}>
         {menuItems.map((item, index) => (
           <div key={index} className="item-section">
-            <h3 onClick={() => (window.location = item.url)}> {item.title}</h3>
+            <Link to={item.url} className="h3"> {item.title}</Link>
             <div className="items">
               {item.links &&
                 item.links.map((link, linkIndex) => (
-                  <a key={linkIndex} href={link.href}>
+                  <Link key={linkIndex} to={link.href}>
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
             </div>
           </div>

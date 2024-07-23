@@ -90,12 +90,35 @@ body {
   --main-p-x: 1rem;
   --main-p-y: 1rem;
   --col-gap: 1em;
+  --animation-time: 1s;
+  padding-top: var(--header-h);
 
   > div > div {
     padding: 0 var(--main-p-x);
   }
-  padding-top: var(--header-h);
+  > div > div:not(.header1)::before {
+    content: "";
+    background-color: var(--purple);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    opacity: 1;
+    transform: translateX(0);
+    animation: moveRight 1s forwards;
+  }
 }
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 pre {
   font-family: "Poppins";
   line-height: 1.2em;
