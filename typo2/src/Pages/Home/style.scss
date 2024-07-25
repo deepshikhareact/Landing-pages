@@ -55,7 +55,7 @@
 
   .cards-section {
     display: flex;
-    gap: var(--col-gap);
+    gap: 50px;
     padding: var(--col-gap) calc(var(--main-p-x) + 1em);
     overflow-x: auto;
 
@@ -276,6 +276,15 @@
           opacity: 1;
           scale: .8;
         }
+      }
+    }
+
+    .cards-section {
+      font-size: 9px;
+      gap: 40px;
+
+      .card {
+        width: 300px;
       }
     }
 

@@ -16,7 +16,7 @@
   .cards-section {
     display: flex;
     // grid-template-columns: repeat(4, 1fr);
-    gap: calc(var(--col-gap) * 2);
+    gap: 50px;
     padding: calc(var(--main-p-x) * 2) calc(var(--main-p-x) * 4);
     overflow-x: auto;
 
@@ -227,6 +227,20 @@
         padding: 0;
       }
     }
+
+    .section-3 {
+      padding: calc(var(--main-p-x)* 5) calc(var(--main-p-x)* 3);
+    }
+
+    .cards-section {
+      font-size: 9px;
+      gap: 40px;
+
+      .card {
+        width: 300px;
+      }
+    }
+
 
     .Big-container {
 

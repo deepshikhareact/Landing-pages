@@ -3,7 +3,7 @@
 
     .section-1,
     .section-2 {
-        padding: calc(var(--main-p-x) * 2) calc(var(--main-p-x) * 4);
+        padding: calc(var(--main-p-x) * 2) calc(var(--main-p-x) * 8);
         display: flex;
         flex-direction: column;
         gap: calc(var(--main-p-x) * 1.5);
@@ -15,24 +15,24 @@
     }
 
     .section-2 {
+
         h4 {
             color: var(--purple);
         }
 
         .flex {
             display: flex;
-            flex-wrap: wrap;
             position: relative;
             width: 100%;
             gap: calc(var(--main-p-x) * 1.5);
 
             >div {
                 flex-basis: calc(50% - calc(var(--main-p-x) * 1.5));
-                min-width: 350px;
+                min-width: 300px;
             }
 
             .col-2 {
-                padding: 0 calc(var(--main-p-x) * 4);
+                padding-left: 1rem;
                 display: flex;
                 flex-direction: column;
                 gap: calc(var(--main-p-x) * 1.5);
@@ -44,16 +44,9 @@
                 }
             }
 
-            // &::before {
-            //     content: "";
-            //     height: 100%;
-            //     width: 3px;
-            //     background-color: var(--purple);
-            //     position: absolute;
-            //     left: 50%;
-            //     top: 0;
-            //     transform: translateX(-50%);
-            // }
+            .col-1 {
+                border-right: 2px solid var(--purple);
+            }
         }
     }
 
@@ -67,23 +60,27 @@
         padding: calc(var(--main-p-x) * 2) 0;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 0;
 
         .col-1,
         .col-2 {
-            flex-basis: 50%;
+            flex-basis: calc(50% - 5px);
             min-width: 220px;
             padding: calc(var(--main-p-x) * 6) calc(var(--main-p-x) * 4);
-            transition: background-color .2s ease-in-out;
-            background-color: #F5F5F5;
             cursor: pointer;
-
-            &:hover {
-                background-color: #EDE7E7;
-            }
 
             h3 {
                 color: var(--purple);
             }
+        }
+
+        .col-1 {
+            background-color: #EDE7E7;
+        }
+
+        .col-2 {
+            background-color: #F5F5F5;
         }
     }
 
@@ -138,7 +135,7 @@
             gap: 1.5rem;
             padding: 0 10px;
             padding-bottom: calc(var(--main-p-x) * 2);
-            height: 300px;
+            height: 200px;
             align-items: center;
             overflow-x: auto;
 
@@ -171,6 +168,8 @@
                     top: 0px;
                     text-align: center;
                     right: 4px;
+                    height: 35px;
+                    width: 35px;
                     transition: opacity .2s ease-in-out;
                     opacity: 0;
                 }
@@ -186,6 +185,10 @@
                 &.active {
                     box-shadow: 0px 4px 6px 1px #c1c1c1;
 
+                    .check {
+                        color: #018235
+                    }
+
                     .check,
                     p {
                         opacity: 1;
@@ -197,15 +200,21 @@
         .submit {
             display: flex;
             justify-content: center;
+            margin-bottom: 2rem;
 
             button {
                 background-color: var(--purple);
                 color: #fff;
                 cursor: pointer;
-                transition: filter .2s ease-in-out;
+                padding: 10px 30px;
+                width: 320px;
+                transition: all .4s ease-in-out;
+                filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 25%));
 
                 &:hover {
-                    filter: brightness(.9);
+                    background-color: #000000;
+                    color: white;
+                    filter: drop-shadow(0px 0px 6px rgb(0 0 0 / 25%));
                 }
             }
         }
@@ -224,13 +233,26 @@
     .ContactPage {
         font-size: 8px;
 
+        .section-1,
+        .section-4 {
+            margin: 2rem 0;
+        }
+
         .section-2 {
+            margin: 2rem 0;
+
             .flex {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
                 gap: 2rem;
                 flex-direction: column-reverse;
 
                 >div {
                     padding: 0 !important;
+                }
+
+                .col-1 {
+                    border-color: transparent;
                 }
             }
         }

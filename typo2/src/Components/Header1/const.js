@@ -28,15 +28,15 @@ export const menuItems = [
     links: [
       {
         label: "Consulting",
-        href: "/services",
+        href: "/services/details",
       },
       {
         label: "Design",
-        href: "/services",
+        href: "/services/details",
       },
       {
         label: "Digital",
-        href: "/services",
+        href: "/services/details",
       },
     ],
   },

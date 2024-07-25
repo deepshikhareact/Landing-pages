@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CoverPageImage from "@/Components/CoverPage";
 import "./style.scss";
 
@@ -46,14 +47,13 @@ Vaishnavi Estate Coffee`}
         {images.map((val, i) => {
           return (
             <img loading="lazy"
-              loading="lazy"
               src={val}
               height="400"
               width="300"
               alt="img"
               key={i}
             />
-          );
+          )
         })}
       </div>
       <div className="section-3">
@@ -72,7 +72,6 @@ Vaishnavi Estate Coffee`}
         {images2.map((val, i) => {
           return (
             <img loading="lazy"
-              loading="lazy"
               src={val}
               height="400"
               width="300"

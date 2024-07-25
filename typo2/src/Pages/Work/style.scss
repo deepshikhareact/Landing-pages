@@ -73,7 +73,7 @@
 
   .cards-section {
     display: flex;
-    gap: var(--col-gap);
+    gap: 50px;
     padding: calc(var(--main-p-x) * 6) var(--main-p-x);
     padding-bottom: calc(var(--main-p-x) * 2);
     overflow-x: auto;
@@ -125,8 +125,23 @@
     --main-p-y: .5rem;
 
     .section-1 {
-      padding: calc(var(--main-p-x)* 6) var(--main-p-x);
+      padding: calc(var(--main-p-x)* 3) var(--main-p-x);
     }
+
+    .section-3 {
+      padding: calc(var(--main-p-x) * 6) calc(var(--main-p-x) * 4)
+    }
+
+    .cards-section {
+      font-size: 9px;
+      padding: calc(var(--main-p-x)* 3) var(--main-p-x);
+      gap: 40px;
+
+      .card {
+        width: 300px;
+      }
+    }
+
 
     .image-gallery {
       // --total-height: calc(80vh - 60px);
