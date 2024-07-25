@@ -110,6 +110,7 @@ body {
     animation: moveRight 1s forwards;
   }
 }
+
 @keyframes moveRight {
   0% {
     transform: translateX(0);

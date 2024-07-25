@@ -21,7 +21,7 @@ const WorkPage = () => {
     "/assets/blue-particle.jpg",
     "/assets/msg593987909-835.jpg",
     "/assets/msg593987909-840.jpg",
-    "/assets/blue-particle.jpg",
+    // "/assets/blue-particle.jpg",
   ]
 
   const KnowMoreBtn = ({ btnClass = "", link, lable = "KNOW MORE" }) => {

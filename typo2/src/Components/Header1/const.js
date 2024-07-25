@@ -7,62 +7,48 @@ export const menuItems = [
   {
     title: "About Us",
     url: "/about",
-    // links: [
-    //   {
-    //     label: "Company",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "People",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "Work With Us",
-    //     href: "#",
-    //   },
-    // ],
+    links: [
+      {
+        label: "Company",
+        href: "/behindUs",
+      },
+      {
+        label: "People",
+        href: "/behindUs",
+      },
+      {
+        label: "Work With Us",
+        href: "/behindUs",
+      },
+    ],
   },
   {
     title: "Our Services",
     url: "/services",
     links: [
       {
-        label: "Details",
-        href: "/services/details",
+        label: "Consulting",
+        href: "/services",
+      },
+      {
+        label: "Design",
+        href: "/services",
+      },
+      {
+        label: "Digital",
+        href: "/services",
       },
     ],
   },
   {
     title: "Our Work",
     url: "/work",
-    // links: [
-    //   {
-    //     label: "Design",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "Digital & Tech",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "Production",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "Case Studies",
-    //     href: "#",
-    //   },
-    // ],
-  },
-  {
-    title: "Resource",
-    url: "/resource",
-    links: [],
-  },
-  {
-    title: "Our Team",
-    url: "/behindUs",
-    links: [],
+    links: [
+      {
+        label: "Work Gallery",
+        href: "/work",
+      },
+    ],
   },
   {
     title: "Contact Us",
