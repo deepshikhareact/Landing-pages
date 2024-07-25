@@ -54,15 +54,14 @@
   }
 
   .cards-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: var(--col-gap);
     padding: var(--col-gap) calc(var(--main-p-x) + 1em);
     overflow-x: auto;
 
     .card {
-      min-width: 300px;
-      max-width: 420px;
+      flex-shrink: 0;
+      width: 340px;
       grid-column: span 1;
       display: flex;
       flex-direction: column;
@@ -224,13 +223,13 @@
         color: black;
 
         .all {
-          background-color: #eed7d7;
+          background-color: #ffdd2c;
         }
 
         .text-wrapper {
           padding: 4em;
           height: max-content;
-          background-color: #eed7d7;
+          background-color: #ffdd2c;
 
           p {
             margin-top: 2em;
@@ -310,8 +309,10 @@
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:480px) {
   .home {
+    font-size: 6px;
+
     .Big-container {
       padding: 4em;
       position: relative;

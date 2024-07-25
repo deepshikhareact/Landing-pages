@@ -18,8 +18,7 @@ const Half_Card = ({ title, description, children }) => {
   children = children || <KnowMoreBtn />;
   return (
     <div className="half-card centered">
-      <img
-        loading="lazy"
+      <img loading="lazy"
         height={500}
         width={500}
         className="backImage"
@@ -38,8 +37,7 @@ const CardsPage = () => {
     <div className="Cards">
       {/* <ImageSlider /> */}
       <div id="mainPage" className="fullpage-card centered ">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           className="backImage"
           src="/assets/Banner.png"
           alt="bannerImage"
@@ -55,8 +53,7 @@ const CardsPage = () => {
       </div>
       <div id="section3" className="flex-container fullpage-card">
         <div data-center="true" className="half-card  fullpage-card centered">
-          <img
-            loading="lazy"
+          <img loading="lazy"
             height={500}
             width={500}
             className="backImage"
@@ -80,8 +77,7 @@ const CardsPage = () => {
           </div>
         </div>
         <div data-center="true" className="half-card  fullpage-card centered">
-          <img
-            loading="lazy"
+          <img loading="lazy"
             height={500}
             width={500}
             className="backImage"
@@ -111,8 +107,7 @@ const CardsPage = () => {
         className="flex-container fullpage-card"
       >
         <div className="card parent">
-          <img
-            loading="lazy"
+          <img loading="lazy"
             className="backImage"
             src="/assets/msg593987909-851.jpg"
             alt="rectangles"
@@ -129,8 +124,7 @@ const CardsPage = () => {
           </div>
         </div>
         <div className="card parent">
-          <img
-            loading="lazy"
+          <img loading="lazy"
             className="backImage"
             src="/assets/msg593987909-835.jpg"
             alt="rectangles"
@@ -147,8 +141,7 @@ const CardsPage = () => {
           </div>
         </div>
         <div className="card parent">
-          <img
-            loading="lazy"
+          <img loading="lazy"
             className="backImage"
             src="/assets/msg593987909-840.jpg"
             alt="rectangles"
@@ -169,62 +162,57 @@ const CardsPage = () => {
         <div className="scroll-card">
           <img
             className="backImage main-img "
-            loading="lazy"
             src="/img/bg12.png"
             alt="/bg12.png"
             height="300"
             width="300"
           />
-          <img className="icon" src="/search.png" alt="image" />
+          <img loading="lazy" className="icon" src="/search.png" alt="image" />
         </div>
         <div className="scroll-card">
-          <img
+          <img loading="lazy"
             className="backImage main-img "
-            loading="lazy"
             src="/img/bg122.png"
             alt="bg122.png"
             height="300"
             width="300"
           />
-          <img className="icon" src="/search.png" alt="image" />
+          <img loading="lazy" className="icon" src="/search.png" alt="image" />
         </div>
         <div className="scroll-card">
-          <img
+          <img loading="lazy"
             className="backImage main-img "
-            loading="lazy"
             src="/img/bg123.png"
             alt="bg123.png"
             height="300"
             width="300"
           />
-          <img className="icon" src="/search.png" alt="image" />
+          <img loading="lazy" className="icon" src="/search.png" alt="image" />
         </div>
         <div className="scroll-card">
-          <img
+          <img loading="lazy"
             className="backImage main-img "
-            loading="lazy"
             src="/img/bg124.png"
             alt="bg124.png"
             height="300"
             width="300"
           />
-          <img className="icon" src="/search.png" alt="image" />
+          <img loading="lazy" className="icon" src="/search.png" alt="image" />
         </div>
         <div className="scroll-card">
-          <img
+          <img loading="lazy"
             className="backImage main-img "
-            loading="lazy"
             src="/img/bg122.png"
             alt="bg122.png"
             height="300"
             width="300"
           />
-          <img className="icon" src="/search.png" alt="image" />
+          <img loading="lazy" className="icon" src="/search.png" alt="image" />
         </div>
       </div>
       <div id="section6" className="Big-container">
         <div className="left parent">
-          <img
+          <img loading="lazy"
             className="backImage"
             src="/img/samm.jpg"
             alt="bg-image"
@@ -251,9 +239,8 @@ const CardsPage = () => {
       <div id="section7" className="Big-container2">
         <div className="small-width">
           <div className="left parent">
-            <img
+            <img loading="lazy"
               className="backImage"
-              loading="lazy"
               src="/img/Rectangle.png"
               alt="bg-image"
               height="700"
@@ -284,9 +271,8 @@ const CardsPage = () => {
         className="flex-container"
       >
         <div className="half-card parent">
-          <img
+          <img loading="lazy"
             className=""
-            loading="lazy"
             src="/img/ShapeCard.png"
             alt="bg-image"
             height="700"
@@ -297,9 +283,8 @@ const CardsPage = () => {
           </div>
         </div>
         <div className="half-card parent">
-          <img
+          <img loading="lazy"
             className=""
-            loading="lazy"
             src="/img/ShapeCard.png"
             alt="bg-image"
             height="700"
@@ -311,8 +296,7 @@ const CardsPage = () => {
         </div>
       </div>
       <div id="section9" className="image-gallery">
-        <img
-          loading="lazy"
+        <img loading="lazy"
           src="/assets/Banner.png"
           alt="bg-image"
           height="400"

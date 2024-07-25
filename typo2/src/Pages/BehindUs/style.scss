@@ -167,3 +167,14 @@
   }
 
 }
+
+@media screen and (max-width:480px) {
+  .BehindUs {
+    font-size: 7px;
+    --main-p-x: .8rem;
+
+    .section-2 {
+      padding: calc(var(--main-p-x) * 2) calc(var(--main-p-x) * 2);
+    }
+  }
+}

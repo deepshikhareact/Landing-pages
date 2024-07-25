@@ -45,7 +45,7 @@ Vaishnavi Estate Coffee`}
       <div className="image-gallery">
         {images.map((val, i) => {
           return (
-            <img
+            <img loading="lazy"
               loading="lazy"
               src={val}
               height="400"
@@ -71,7 +71,7 @@ Vaishnavi Estate Coffee`}
       <div className="image-gallery">
         {images2.map((val, i) => {
           return (
-            <img
+            <img loading="lazy"
               loading="lazy"
               src={val}
               height="400"
@@ -91,7 +91,7 @@ Vaishnavi Estate Coffee`}
       <div className="cards-section">
         {cards.map((val, i) => {
           return (<div key={i} className="card">
-            <img
+            <img loading="lazy"
               src={val}
               alt={val}
               height={400}

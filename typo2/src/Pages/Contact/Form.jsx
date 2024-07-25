@@ -26,7 +26,25 @@ const icons = [
 
 const ContactForm = () => {
 
-    const [category, setCategory] = useState(null)
+    const [category, setCategory] = useState([])
+
+    const interestHandler = (label) => {
+        let type = category.includes(label) ? "pull" : "push"
+        console.log("type", type);
+        if (type === "push") {
+            setCategory(pre => {
+                const x = [...pre];
+                x.push(label);
+                return x;
+            });
+        } else {
+            setCategory(pre => {
+                const x = [...pre];
+                const filteredArray = x.filter(val => val !== label);
+                return filteredArray;
+            });
+        }
+    }
 
     return (
         <form onSubmit={(e) => e.preventDefault()} className='Form'>
@@ -43,11 +61,11 @@ const ContactForm = () => {
             <div className="flex-icons">
                 {icons.map((icon, i) => {
                     return <div
-                        onClick={() => setCategory(icon.label)}
-                        key={i} className={`item ${category === icon.label ? "active" : ""}`}>
-                        <img className="icon" height={80} width={120} src={icon.imgUrl} alt={icon.label} />
+                        onClick={() => interestHandler(icon.label)}
+                        key={i} className={`item ${category.includes(icon.label) ? "active" : ""}`}>
+                        <img loading="lazy" className="icon" height={80} width={120} src={icon.imgUrl} alt={icon.label} />
                         <p className="text-28 text-400">{icon.label}</p>
-                        <img className="check" src="/assets/Contact/check.png" height={34} width={34} />
+                        <img loading="lazy" className="check" src="/assets/Contact/check.png" height={34} width={34} />
                     </div>
                 })}
             </div>

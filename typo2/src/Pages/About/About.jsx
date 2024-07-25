@@ -29,7 +29,7 @@ const About = () => {
         <ImageSlider />
       </div> */}
       <div className="hero-section">
-        <img src="/assets/Home/About-Hero.png" alt="Banner" />
+        <img loading="lazy" src="/assets/Home/About-Hero.png" alt="Banner" />
         <div className="overlay">
           <h1 className="text-84 text-700">{headingText}</h1>
           <h3 className="text-48 text-400">{subHeadingText}</h3>
@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </div>
       <div id="section5" className="Big-container">
-        <img
+        <img loading="lazy"
           className="main-backImage"
           src="/assets/Home/About-half-card.png"
           alt="bg-image"
@@ -57,7 +57,7 @@ const About = () => {
           width="500"
         />
         <div className="left parent">
-          <img
+          <img loading="lazy"
             className="backImage"
             src="/assets/Home/About-half-card.png"
 

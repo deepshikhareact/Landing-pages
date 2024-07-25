@@ -26,8 +26,8 @@ India`}
                     </div>
 
                     <div className="col-2">
-                        <p className="text-28"> <img height={34} width={34} src="/assets/Contact/email-svgrepo-com 1.png" alt="email" />  support@mediajenie.com</p>
-                        <p className="text-28"><img height={34} width={34} src="/assets/Contact/phone-svgrepo-com 1.png" alt="phone" />  +91 98441 44802</p>
+                        <p className="text-28"> <img loading="lazy" height={34} width={34} src="/assets/Contact/email-svgrepo-com 1.png" alt="email" />  support@mediajenie.com</p>
+                        <p className="text-28"><img loading="lazy" loading="lazy" height={34} width={34} src="/assets/Contact/phone-svgrepo-com 1.png" alt="phone" />  +91 98441 44802</p>
                     </div>
 
                 </div>

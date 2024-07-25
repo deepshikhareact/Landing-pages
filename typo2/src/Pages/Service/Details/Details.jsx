@@ -41,7 +41,7 @@ const DetailsPage = () => {
         {fakeCardData.map((card, i) => {
           return (
             <div className="card" key={i}>
-              <img
+              <img loading="lazy"
                 src={card.imgSrc}
                 alt={card.imgSrc}
                 height={450}
@@ -71,7 +71,7 @@ const DetailsPage = () => {
       </div>
       <div id="section-4" className="Big-container">
         <div className="left parent">
-          <img
+          <img loading="lazy"
             className="backImage"
             src="/assets/Service/float-card.png"
             alt="bg-image"

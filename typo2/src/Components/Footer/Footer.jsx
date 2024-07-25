@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className="section social text-28">
         <Link to="#">
-          <img
+          <img loading="lazy"
             height={24}
             width={24}
             src="/icons/facebook.svg"
@@ -36,7 +36,7 @@ const Footer = () => {
           />
         </Link>
         <Link to="#">
-          <img
+          <img loading="lazy"
             height={24}
             width={24}
             src="/icons/instagram.svg"
@@ -44,7 +44,7 @@ const Footer = () => {
           />
         </Link>
         <Link to="#">
-          <img
+          <img loading="lazy"
             height={24}
             width={24}
             src="/icons/twitter.svg"

@@ -20,11 +20,16 @@
         }
 
         .flex {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             position: relative;
             width: 100%;
             gap: calc(var(--main-p-x) * 1.5);
+
+            >div {
+                flex-basis: calc(50% - calc(var(--main-p-x) * 1.5));
+                min-width: 350px;
+            }
 
             .col-2 {
                 padding: 0 calc(var(--main-p-x) * 4);
@@ -39,16 +44,16 @@
                 }
             }
 
-            &::before {
-                content: "";
-                height: 100%;
-                width: 3px;
-                background-color: var(--purple);
-                position: absolute;
-                left: 50%;
-                top: 0;
-                transform: translateX(-50%);
-            }
+            // &::before {
+            //     content: "";
+            //     height: 100%;
+            //     width: 3px;
+            //     background-color: var(--purple);
+            //     position: absolute;
+            //     left: 50%;
+            //     top: 0;
+            //     transform: translateX(-50%);
+            // }
         }
     }
 
@@ -60,11 +65,13 @@
 
     .section-4 {
         padding: calc(var(--main-p-x) * 2) 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
 
         .col-1,
         .col-2 {
+            flex-basis: 50%;
+            min-width: 220px;
             padding: calc(var(--main-p-x) * 6) calc(var(--main-p-x) * 4);
             transition: background-color .2s ease-in-out;
             background-color: #F5F5F5;
@@ -115,9 +122,8 @@
             border: 1px solid #7D7D7D;
             padding: 10px 20px;
             min-height: 200px;
-            max-width: 100%;
-            min-width: 100%;
             outline: none;
+            resize: vertical;
             transition: border-color .2s ease;
             font-weight: 500;
             font-size: var(--text-28);
@@ -129,26 +135,25 @@
 
         .flex-icons {
             display: flex;
-            gap: calc(var(--main-p-x)* 2);
-            overflow-x: auto;
+            gap: 1.5rem;
+            padding: 0 10px;
             padding-bottom: calc(var(--main-p-x) * 2);
+            height: 300px;
+            align-items: center;
+            overflow-x: auto;
 
             .item {
-                height: 140px !important;
-                width: 140px !important;
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                gap: 1em;
-                transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
                 position: relative;
+                padding: 10px;
+                height: 140px;
+                width: 140px;
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
 
-                img.icon {
-                    padding: 5px;
+                img {
                     object-fit: contain;
+                    padding: 5px;
                 }
 
                 p {
@@ -203,6 +208,60 @@
                     filter: brightness(.9);
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 876px) {
+    .ContactPage {
+        font-size: 8px;
+        --main-p-x: .5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ContactPage {
+        font-size: 8px;
+
+        .section-2 {
+            .flex {
+                gap: 2rem;
+                flex-direction: column-reverse;
+
+                >div {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ContactPage {
+        font-size: 8px;
+        --main-p-x: .25rem;
+
+        pre {
+            text-wrap: pretty;
+        }
+
+        .section-1,
+        .section-2 {
+            overflow-x: hidden;
+        }
+
+        .section-4 {
+
+            .col-1,
+            .col-2 {
+                width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        .Form .fields {
+            grid-template-columns: 1fr;
         }
     }
 }

@@ -45,7 +45,7 @@ const ServicePage = () => {
         </pre>
       </div>
       <div className="section-2">
-        <img src="/assets/Service/main-hero.png" alt="Banner" />
+        <img loading="lazy" src="/assets/Service/main-hero.png" alt="Banner" />
       </div>
       <div className="section-3">
         <h4 className="text-32 text-600">What we do?</h4>
@@ -82,7 +82,7 @@ function ServiceProductCard({ data }) {
   return (
     <>
       <div className="left">
-        <img
+        <img loading="lazy"
           height={360}
           width={360}
           src={imgSrc || fakeImgSrc}

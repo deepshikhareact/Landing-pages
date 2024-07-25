@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="hero-section">
-        <img src="/assets/Home/Home-Hero-Image.png" alt="Banner" />
+        <img loading="lazy" src="/assets/Home/Home-Hero-Image.png" alt="Banner" />
         <div className="overlay">
           <pre className="text-84 text-700">{headingText}</pre>
           <h3 className="text-48 text-500">{subHeadingText}</h3>
@@ -37,7 +37,7 @@ const Home = () => {
       </div>
       <div className="cards-section">
         <div className="card">
-          <img
+          <img loading="lazy"
             src="/assets/blue-particle.jpg"
             alt="blue.jpg"
             height={400}
@@ -54,7 +54,7 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img
+          <img loading="lazy"
             src="/assets/red-rays.jpg"
             alt="blue.jpg"
             height={400}
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img
+          <img loading="lazy"
             src="/assets/blue-ball.jpg"
             alt="blue.jpg"
             height={400}
@@ -94,7 +94,7 @@ const Home = () => {
       </div>
       <div id="section6" className="Big-container">
         <div className="left parent">
-          <img
+          <img loading="lazy"
             className="backImage"
             src="/assets/Home/Card-Over@2x.png"
             alt="bg-image"

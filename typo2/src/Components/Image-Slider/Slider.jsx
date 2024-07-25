@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 function arrowNext(a) {
   return (
     <button onClick={a} className="next-arrow">
-      <img width={24} height={16} src="/icons/arrow-right.svg" />
+      <img loading="lazy" width={24} height={16} src="/icons/arrow-right.svg" />
     </button>
   );
 }
@@ -12,7 +12,7 @@ function arrowNext(a) {
 function arrowPre(a) {
   return (
     <button onClick={a} className="pre-arrow">
-      <img width={24} height={16} src="/icons/arrow-left.svg" />
+      <img loading="lazy" width={24} height={16} src="/icons/arrow-left.svg" />
     </button>
   );
 }
@@ -36,7 +36,7 @@ const ImageSlider = ({ data = fakeImagesData }) => {
     >
       {data.map((imgSrc, index) => (
         <div key={index} className="Image-card">
-          <img src={imgSrc} alt="test" />
+          <img loading="lazy" src={imgSrc} alt="test" />
         </div>
       ))}
     </Carousel>

@@ -20,14 +20,12 @@ const Header = () => {
     <div className="header1">
       <div className="top">
         <div className="logo">
-          <img src="/assets/Banner.png" height={40} width={40} alt="Logo" />
+          <img loading="lazy" src="/assets/Banner.png" height={40} width={40} alt="Logo" />
           <h3 className="text-16 text-700">CX Agent</h3>
-
         </div>
         <button
           className={isMenuOpen ? "menu-toggle active " : "menu-toggle"}
-          onClick={toggleMenu}
-        >
+          onClick={toggleMenu} >
         </button>
       </div>
       <div className={isMenuOpen ? "menu active " : "menu"}>
